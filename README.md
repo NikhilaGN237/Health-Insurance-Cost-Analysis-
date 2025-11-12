@@ -2,97 +2,106 @@
 
 ## Project Overview
 
-This project explores and analyses an insurance dataset using **Python** and **Tableau** to uncover factors that influence medical insurance charges. The primary goal is to derive actionable insights related to customer demographics, lifestyle factors (e.g., smoking), and their impact on insurance premiums. The insights support data-driven decision-making for premium pricing and customer segmentation.
+This project focuses on analyzing a structured health insurance dataset using **Python** and **Tableau** to uncover key factors influencing medical insurance charges. The objective is to provide data-driven insights into how demographic and lifestyle variables affect premium amounts, enabling smarter pricing strategies and risk segmentation.
 
 ---
 
 ## Problem Statement
 
-An insurance provider wants to:
+An insurance provider seeks to:
 
-- Understand how various factors like age, BMI, gender, children, region, and smoking habits influence insurance charges.
-- Identify which customer segments are at high risk (and thus high cost).
-- Build a foundation for further predictive modeling or premium adjustment strategies.
+- Understand how age, BMI, gender, children, smoking habits, and region influence medical charges
+- Identify high-risk customer groups based on lifestyle and demographic factors
+- Use insights to inform premium adjustments and future predictive modeling
 
-The solution involves analyzing a single structured dataset:
-
-- `insurance.csv`: Contains detailed records of individual insurance policyholders with 7 key attributes.
+Dataset Used:  
+**insurance.csv** – Contains individual policyholder data with 7 key attributes
 
 ---
 
 ## Technologies Used
 
-- **Python** (with libraries: pandas, seaborn, matplotlib, numpy)
-- **Jupyter Notebook** for data cleaning and EDA
-- **Tableau** for interactive data visualization
-- **Git & GitHub** for version control and publishing
+- **Python**  
+  Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`  
+- **Jupyter Notebook** – For data cleaning and exploratory analysis  
+- **Tableau** – For building interactive visual dashboards  
+- **Git & GitHub** – For version control and project documentation
 
 ---
 
-## Data Understanding & Cleaning
+## Data Preprocessing
 
-The following preprocessing steps were performed:
+Steps performed during data preparation:
 
-- Inspected data structure and column data types
-- Verified data completeness – no missing values were found
-- Checked for duplicates
-- Categorical/numerical column identification for appropriate visual treatment
-- Outlier and distribution checks for key variables
+- Verified structure and data types of all columns
+- Checked for missing values and duplicates
+- Identified and separated categorical vs numerical features
+- Conducted outlier detection and normalization for key variables
 
 ---
 
 ## Exploratory Data Analysis (EDA)
 
-Key questions explored using Python:
+The dataset was explored to answer the following questions:
 
-### Demographics & Distribution:
-
-- What is the gender and region distribution of the insured population?
-- What is the smoker vs non-smoker ratio?
+**Demographic Insights**
+- What is the distribution by gender and region?
+- How common is smoking among policyholders?
 - How many children are typically covered?
 
-### Cost & Risk Insights:
+**Cost & Risk Drivers**
+- What is the effect of age, BMI, and smoking on charges?
+- Do smokers consistently pay higher premiums?
+- Does obesity (BMI > 30) impact insurance costs?
 
-- How do **age**, **BMI**, and **smoking status** affect **insurance charges**?
-- Do **smokers pay more** than non-smokers?
-- Does **having more children** impact premiums?
-- Is there a relationship between **obesity (BMI)** and charges?
-
-### Key Relationships:
-
-- Scatter plots to explore numerical feature impact on charges
-- Count plots to visualize distribution of categorical features
+**Visual Techniques Used**
+- Scatter plots for age and BMI versus charges
+- Count plots for categorical distributions
+- Correlation heatmaps to identify strong relationships
 
 ---
 
-## Tableau Dashboard
+## Tableau Dashboard Overview
 
-The **Tableau dashboard** provides a clean, interactive view of how various customer features impact insurance charges:
+The Tableau dashboard was designed to present clear, interactive insights:
 
-### Visual Elements:
+- **Charges vs Age** with smoker-based segmentation
+- **BMI vs Charges** to assess obesity-related impact
+- **Charges by Number of Children**
+- **Demographic breakdowns** for gender, region, and smoking status
+- **Filters** to explore data by category
 
-- **Categorical Analysis:** Bar charts for smoker, sex, and region distribution
-- **Charges vs Age:** Scatter plot with smoker color split and trend line
-- **BMI vs Charges:** Scatter plot to show effect of body mass on cost
-- **Charges vs Number of Children:** To check cost differences for families
-- **Filters:** User can filter dashboard by `smoker`, `sex`, or `region`
-
-### Link to Tableau Public Dashboard:
-[View Dashboard on Tableau Public](https://public.tableau.com/app/profile/viijeta.r/viz/InsuranceDataAnalysis_17522524069880/InsuranceDataAnalysis?publish=yes)
+(Note: Dashboard not published for public view)
 
 ---
 
 ## Key Findings
 
-- **Smokers pay significantly higher insurance charges**, especially as they age.
-- **Age and BMI are positively correlated** with charges.
-- **Number of children** has minimal impact on cost.
-- **Non-smokers have consistently lower premiums** across all age groups.
+- **Smoking status** is the strongest predictor of higher insurance charges  
+- **BMI** and **age** are positively correlated with premiums  
+- **Non-smokers** consistently pay lower rates across all age groups  
+- **Number of children** has minimal effect on medical cost  
 
 ---
 
 ## Author
 
-**Vijeta** – Junior Data Analyst  
-Tools: Python | Tableau | SQL | Power BI  | Excel
-[🔗 Connect on LinkedIn](https://www.linkedin.com/in/viijetar/)
+**Nikhila Gayathri Nalabolu**  
+Data Analyst  
+[LinkedIn Profile](https://www.linkedin.com/in/nikhila-gayathri-n-a7a633188/)  
+Email: nikhilagayathrin@gmail.com
+
+---
+
+## Repository Contents
+
+- `insurance.csv` – Raw dataset  
+- `Insurance.ipynb` – Python notebook with full data analysis  
+- `InsuranceDataAnalysis.twb` – Tableau workbook  
+- `Dashboard.png` – Static screenshot of final dashboard
+
+---
+
+## License
+
+This project is open for learning and personal use. For any commercial or academic application, please contact the author.
